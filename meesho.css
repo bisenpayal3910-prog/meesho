@@ -160,8 +160,8 @@ header a:hover{
     text-align:start;
 }
 .slider img{
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 .img2 img{
     width: 100%;
@@ -173,12 +173,80 @@ header a:hover{
 .img3{
     display: flex;
     position: absolute;
-    top: 50%;
-    right: 5px;
-    transform: translate(-50%, -50%);
+    right: 200px;
+    transform: translate(-100%, -100%);
     /* height: 50px; */
 
+width: 200px;
+height: 200px;
+padding-bottom: 50px;
+}
+.img3 img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  bottom: 40px;
+    padding: 2px;;
+}
+.img3 img:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.btn2{
+    position: absolute;
+    padding: 20px 30px;
+    background-color: white;
+    color: #9a2289;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    left: 200px;
+    bottom: 28px;
+    padding: 20px;
+    
+    transform: translate(-100%, -100%);
+   
+}
+@media (max-width: 768px){
 
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    .two{
+        flex-direction: column;
+    }
+
+    .decied{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .slider img{
+        width: 159px;
+    }
+
+    .img-section{
+        flex-direction: column;
+    }
+
+    .img-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .img-hero{
+        flex-direction: column;
+    }
+
+    .img3{
+        grid-template-columns: 1fr;
+    }
 }
 
 
