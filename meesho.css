@@ -12,6 +12,17 @@ body{
 }
 
 /* Navbar */
+
+
+/* Navbar */
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:10px;
+    background:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
 .logo{
     font-weight: bold;
     color: rgba(130, 54, 10, 0.829);
@@ -97,6 +108,10 @@ header a:hover{
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.decied p img{
+    width: 20px;
+  
+}
 
 .two{
     background-color: #fdeefa;
@@ -163,6 +178,17 @@ header a:hover{
     width: 180px;
     height: 180px;
 }
+.sliderr{display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 20px;
+    /* background-color: #f0f0f0; */
+    cursor: pointer;
+   }
+.sliderr img{
+    width: 300px;
+    height: 300px;
+}
 .img2 img{
     width: 100%;
     height: 50vh;
@@ -207,6 +233,118 @@ padding-bottom: 50px;
     transform: translate(-100%, -100%);
    
 }
+.carts{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   size: 10px;
+   background-color: #ffffff;
+   border: rgba(0, 0, 0, 0.114) solid 1px;
+}
+.carts img{
+    width: 250px;
+    height:250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+}
+.cart{
+    font-size: 15px;
+    border: rgba(0, 0, 0, 0.114) solid 1px;
+    padding: 5px;
+    line-height: 1.7;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.cart .rating{
+    background-color: green;
+    border-radius: 10px;
+    padding: 3px 6px;
+
+}
+.cart span i{
+    color: #f3eff2;
+    font-size: 10px;
+}
+
+/* sidebar */
+
+.sidebar {
+  width: 280px;
+  background: #fff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.sort {
+  margin-bottom: 20px;
+}
+
+.sort select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+}
+
+.filters h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.filters p {
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.filters h4 {
+  margin: 15px 0 10px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-list label {
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-list input {
+  margin-right: 8px;
+}
+
+.show-more {
+  display: block;
+  margin-top: 10px;
+  color: #ff3f6c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+
+
+
 @media (max-width: 768px){
 
     header{
@@ -219,7 +357,7 @@ padding-bottom: 50px;
     }
 
     .two{
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .decied{
